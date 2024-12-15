@@ -1,32 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Smooth Scroll for anchor links
+    // Glatan/tecan pomak za anchor linkove
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();  // Prevent default anchor behavior
-            const targetId = this.getAttribute('href').slice(1);  // Get the target section ID
+            e.preventDefault(); 
+            const targetId = this.getAttribute('href').slice(1);  // Dobivanje target section ID
             const targetElement = document.getElementById(targetId);
 
-            // Scroll smoothly to the target element
+            // Scroll-uj tecno do target elementa
             window.scrollTo({
-                top: targetElement.offsetTop - 50, // Adjust for header height
+                top: targetElement.offsetTop - 50, //header visina
                 behavior: 'smooth'
             });
         });
     });
 
-    // Change navbar background color on scroll
+    // Mijenjanje navbar background boje pri scrollanju
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('nav');
         if (window.scrollY > 50) {
-            navbar.style.backgroundColor = '#444'; // Darker background on scroll
+            navbar.style.backgroundColor = '#444'; // Tamnija boja pri scroll
         } else {
-            navbar.style.backgroundColor = '#333'; // Default background color
+            navbar.style.backgroundColor = '#333'; // Default background boja
         }
     });
 
-    // Accordion-style FAQ with toggle functionality
+    // Faq sa Accordion-style i toggle funkcijom
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form validation for contact form
+    // Form validacija za contact form
     const contactForm = document.querySelector('#contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const messageInput = document.querySelector('#message');
             if (nameInput.value === '' || emailInput.value === '' || messageInput.value === '') {
                 alert('Please fill out all fields.');
-                event.preventDefault();  // Prevent form submission if fields are empty
+                event.preventDefault();
             }
         });
     }
 
-    // Dynamic Greeting based on the time of day
+    // Dynamic Greeting- zavisno od doba dana kada se gleda stranica
     const greetingElement = document.querySelector('#greeting');
     const currentHour = new Date().getHours();
     if (greetingElement) {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Image Carousel (Slider) functionality
+    // Image Carousel (Slider) funkcionalnost
     let currentImageIndex = 0;
     const images = document.querySelectorAll('.carousel img');
     const nextButton = document.querySelector('.carousel-next');
@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // to display the first image in the carousel
+    // display prve slike u carousel
     showImage(currentImageIndex);
 
-    // Popup Modal functionality
+    // Popup Modal f.
     const modal = document.querySelector('#popupModal');
     const openModalButton = document.querySelector('#openModal');
     const closeModalButton = document.querySelector('#closeModal');
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Responsive-mobile menu toggle functionality
+    // Responsive-mobile meni toggle f.
     const toggleButton = document.querySelector('#toggle-btn');
     const navList = document.querySelector('#nav-list');
     if (toggleButton && navList) {
