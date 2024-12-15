@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Example: Accordion-style FAQ with toggle functionality
+    // Accordion-style FAQ with toggle functionality
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -56,11 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentHour = new Date().getHours();
     if (greetingElement) {
         if (currentHour < 12) {
-            greetingElement.textContent = 'Dobro jutro!'; // Good morning
+            greetingElement.textContent = 'Dobro jutro!'; // jutro
         } else if (currentHour < 18) {
-            greetingElement.textContent = 'Dobar dan!'; // Good afternoon
+            greetingElement.textContent = 'Dobar dan!'; // dan
         } else {
-            greetingElement.textContent = 'Dobro večer!'; // Good evening
+            greetingElement.textContent = 'Dobro večer!'; // noc
         }
     }
 
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initial call to display the first image in the carousel
+    // to display the first image in the carousel
     showImage(currentImageIndex);
 
     // Popup Modal functionality
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Mobile menu toggle functionality
+    // Responsive-mobile menu toggle functionality
     const toggleButton = document.querySelector('#toggle-btn');
     const navList = document.querySelector('#nav-list');
     if (toggleButton && navList) {
