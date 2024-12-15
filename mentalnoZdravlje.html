@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalno Zdravlje</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .highlight-text {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .intro-text {
+            font-size: 18px;
+            color: #333;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            margin: 20px auto;
+            display: block;
+        }
+        main {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-primary text-white text-center p-3">
+    <a href="index.html">
+        <img src="slike/logo.png" alt="Logo" class="img-fluid">
+    </a>
+    <h1>Zdravlje i Fitnes</h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <button id="toggle-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav-list" class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                <li class="nav-item"><a class="nav-link" href="treninzi.html">Planovi Treninga</a></li>
+                <li class="nav-item"><a class="nav-link" href="ishrana.html">Zdravi Recepti</a></li>
+                <li class="nav-item active"><a class="nav-link" href="mentalnoZdravlje.html">Mentalno Zdravlje</a></li>
+                <li class="nav-item"><a class="nav-link" href="progres.html">Praćenje Napretka</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontaktirajte Nas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="greeting" class="text-white mt-2 text-center"></div>
+</nav>
+
+<main class="container py-5">
+    <h2 class="text-center text-success mb-4">Briga o <em class="highlight-text">mentalnom zdravlju</em></h2>
+    <p class="intro-text text-center">Mentalno zdravlje je ključno za kvalitet života. Ovdje ćete pronaći korisne savjete za smanjenje stresa i održavanje mentalne ravnoteže.</p>
+
+    <div class="text-center mb-5">
+        <img src="slike/mentalno.jpg" alt="Mentalno Zdravlje" class="img-fluid rounded">
+    </div>
+
+    <div class="mb-5">
+        <h3 class="text-success">Savjeti za smanjenje stresa</h3>
+        <p>Stres može utjecati na vaše tijelo i um. Evo nekoliko savjeta:</p>
+        <ol class="text-dark">
+            <li>Meditacija i duboko disanje</li>
+            <li>Planiranje vremena za odmor</li>
+            <li>Uravnotežena ishrana i fizička aktivnost</li>
+        </ol>
+    </div>
+
+    <div class="mb-5">
+        <h3 class="text-success">Tehnike opuštanja</h3>
+        <p>Tehnike kao što su joga, slušanje opuštajuće muzike, ili vođenje dnevnika mogu pomoći u smanjenju stresa.</p>
+
+        <iframe src="https://www.youtube.com/embed/Muz0YR0ILaU" title="YouTube video o tehnikama opuštanja"></iframe>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2024 Zdravlje i Fitnes. Sva prava zadržana. Hana</p>
+    <p>Kontaktirajte me putem e-maila: <a href="mailto:hanasi.hodzic@gmail.com" class="text-white">hanasi.hodzic@gmail.com</a></p>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="js/script.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
